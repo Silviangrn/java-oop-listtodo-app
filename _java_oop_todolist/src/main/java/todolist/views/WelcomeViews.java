@@ -22,7 +22,7 @@ public class WelcomeViews {
 
         switch (menu) {
             case 1:
-                System.out.println("go to menu Login");
+                LoginView.ShowLoginPage();
                 break;
             case 2:
                 System.out.println("go to menu Create User Page ");
@@ -33,5 +33,9 @@ public class WelcomeViews {
         }
 
         inputScanner.close();
+    }
+
+    public static void ShowAddUser() {
+        
     }
 }
