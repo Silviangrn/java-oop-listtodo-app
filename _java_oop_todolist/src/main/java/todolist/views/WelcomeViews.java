@@ -25,7 +25,7 @@ public class WelcomeViews {
                 LoginView.ShowLoginPage();
                 break;
             case 2:
-                System.out.println("go to menu Create User Page ");
+                UserView.ShowUserMain();
                 break;
             case 0:
                 System.out.println("Application Closed!");
@@ -33,9 +33,5 @@ public class WelcomeViews {
         }
 
         inputScanner.close();
-    }
-
-    public static void ShowAddUser() {
-        
     }
 }

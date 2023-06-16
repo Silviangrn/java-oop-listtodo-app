@@ -15,6 +15,6 @@ public class TaskEntity {
 
     public String getTask() {return task;}
 
-    public void setTask() {this.task = task;}
+    public void setTask(String task) {this.task = task;}
 
 }

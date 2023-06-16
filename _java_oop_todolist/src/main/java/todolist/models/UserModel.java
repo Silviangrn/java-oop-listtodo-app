@@ -10,8 +10,6 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
-import com.mysql.cj.protocol.Resultset;
-
 import todolist.entities.UserEntity;
 
 public class UserModel {
@@ -21,7 +19,7 @@ public class UserModel {
         this.dataSource = dataSource;
     }
     public void CreateUser (UserEntity user) {
-        String sql = "INSERT INTO user VALUES (?,?,now ())";
+        String sql = "INSERT INTO user VALUES (?, ?, now())";
 
         try (
             Connection connection = dataSource.getConnection();
@@ -70,5 +68,7 @@ public class UserModel {
         } catch (SQLException ex) {
             throw new RuntimeException(ex);
         }
+    }
+    public static void CreateUser() {
     }
 }

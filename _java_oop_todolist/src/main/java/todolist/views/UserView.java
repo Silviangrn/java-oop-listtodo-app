@@ -31,7 +31,7 @@ public class UserView {
                 ShowAddUser();
                 break;
             case 2:
-                ShowChangePassword()
+                ShowChangePassword();
                 break;
         }
         inputScanner.close();

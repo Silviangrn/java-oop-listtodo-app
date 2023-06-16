@@ -12,7 +12,7 @@ public class LoginUsecase {
     private LoginModel loginModel;
 
     public LoginUsecase () {
-        dataSource =DBConnectionUtil.getDataSource();
+        dataSource = DBConnectionUtil.getDataSource();
         loginModel = new LoginModel(dataSource);
     }
 
@@ -23,7 +23,6 @@ public class LoginUsecase {
         }
 
         UserEntity user = new UserEntity();
-
         user.setUserid(userid);
         user.setPassword(password);
 
@@ -33,7 +32,7 @@ public class LoginUsecase {
         }
 
         //Validasi userid & password valid 
-        if (!loginModel.UserpasswordValid(user)) {
+        if (!loginModel.UserPasswordValid(user)) {
             return "userid and password is not valid, please try again";
         }
 
